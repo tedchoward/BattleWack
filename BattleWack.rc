@@ -1,0 +1,438 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BattleWack.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BattleWack.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  37, 33
+BEGIN
+    BUTTON      ID_FILE_NEWGAME
+    BUTTON      ID_HELP_ASKT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Game",                   ID_FILE_NEWGAME
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&High Scores",                ID_HIGHSCORES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&How to Play",                ID_HELPME
+        MENUITEM "Ask &T",                      ID_HELP_ASKT
+        MENUITEM "&About Mr.T BattleShip...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Mr.T BattleShip"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Mr.T BattleShip Version 2.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002 The 11th Hour Group",IDC_STATIC,40,
+                    25,138,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PLAYERNAME DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Player Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_PLAYER,77,29,96,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,66,69,50,14
+    GROUPBOX        "Player Name",IDC_STATIC,7,7,172,58
+    LTEXT           "Enter Player Name:",IDC_STATIC,13,30,62,9,NOT WS_GROUP
+END
+
+IDD_COMPNAME DIALOG DISCARDABLE  0, 0, 186, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Computer Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_COMPNAME,89,28,84,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,69,65,50,14
+    GROUPBOX        "Computer Name",IDC_STATIC,7,7,172,52
+    LTEXT           "Enter Computer Name:",IDC_STATIC,13,30,72,9
+END
+
+IDD_PLACESHIPS DIALOG DISCARDABLE  0, 0, 413, 275
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Ship Postitons"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,181,254,50,14
+    EDITTEXT        IDC_EDIT_C_SN,60,47,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_ROW,49,89,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_C_COL,49,107,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B_SN,274,48,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B_ROW,257,90,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B_COL,257,108,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_D_SN,60,169,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_D_ROW,43,210,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_D_COL,43,229,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_S_SN,274,169,124,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_S_ROW,257,210,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_S_COL,257,229,17,12,ES_AUTOHSCROLL
+    GROUPBOX        "Carria: Size = 5 Blocks",IDC_STATIC,7,14,185,115
+    LTEXT           "Ship Name:",IDC_STATIC,19,50,38,10
+    LTEXT           "Ship Position:",IDC_STATIC,22,78,44,9
+    LTEXT           "Col:",IDC_STATIC,23,109,18,9
+    LTEXT           "Row:",IDC_STATIC,23,91,21,9
+    LTEXT           "Orientation:",IDC_STATIC,123,78,38,9
+    CONTROL         "Vertical",IDC_RADIO_C_V,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,127,91,38,10
+    CONTROL         "Horizontal",IDC_RADIO_C_H,"Button",BS_AUTORADIOBUTTON,
+                    127,107,50,16
+    GROUPBOX        "BattleWack: Size = 4 Blocks",IDC_STATIC,221,14,185,116
+    LTEXT           "Ship Name:",IDC_STATIC,233,51,38,10
+    LTEXT           "Ship Position:",IDC_STATIC,236,79,44,9
+    LTEXT           "Row:",IDC_STATIC,237,92,18,9
+    LTEXT           "Col:",IDC_STATIC,237,112,13,9
+    LTEXT           "Orientation:",IDC_STATIC,337,79,38,9
+    CONTROL         "Vertical",IDC_RADIO_B_V,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,341,92,38,10
+    CONTROL         "Horizontal",IDC_RADIO_B_H,"Button",BS_AUTORADIOBUTTON,
+                    341,108,50,16
+    GROUPBOX        "Destroya: Size = 3 Blocks",IDC_STATIC,7,135,185,116
+    LTEXT           "Ship Name:",IDC_STATIC,19,172,38,10
+    LTEXT           "Ship Position:",IDC_STATIC,22,199,44,9
+    LTEXT           "Row:",IDC_STATIC,22,211,18,9
+    LTEXT           "Col:",IDC_STATIC,22,230,13,9
+    LTEXT           "Orientation:",IDC_STATIC,123,199,38,9
+    CONTROL         "Vertical",IDC_RADIO_D_V,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,127,213,38,10
+    CONTROL         "Horizontal",IDC_RADIO_D_H,"Button",BS_AUTORADIOBUTTON,
+                    127,229,50,16
+    GROUPBOX        "Submarino: Size = 2 Blocks",IDC_STATIC,221,135,185,116
+    LTEXT           "Ship Name:",IDC_STATIC,233,172,38,10
+    LTEXT           "Ship Position:",IDC_STATIC,236,199,44,9
+    LTEXT           "Row:",IDC_STATIC,238,212,18,9
+    LTEXT           "Col:",IDC_STATIC,238,231,13,9
+    LTEXT           "Orientation:",IDC_STATIC,337,199,38,9
+    CONTROL         "Vertical",IDC_RADIO_S_V,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,341,213,38,10
+    CONTROL         "Horizontal",IDC_RADIO_S_H,"Button",BS_AUTORADIOBUTTON,
+                    341,229,50,16
+END
+
+IDD_NETWORK DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Network Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Client",IDC_RADIO_CLIENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,70,29,33,10
+    CONTROL         "Server",IDC_RADIO_SERVER,"Button",BS_AUTORADIOBUTTON,70,
+                    44,37,10
+    DEFPUSHBUTTON   "OK",IDOK,69,69,50,14
+    GROUPBOX        "    Do you want to be the client or server, sucka!",
+                    IDC_STATIC,7,7,172,55
+END
+
+IDD_INITIALS DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "High Score"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,69,50,14
+    LTEXT           "ENTER PLAYER INITIALS",IDC_STATIC,49,27,87,10
+    EDITTEXT        IDC_EDIT_INITIALS,76,43,30,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "The 11th Hour Group\0"
+            VALUE "FileDescription", "Mr.T BattleShip\0"
+            VALUE "FileVersion", "2.0\0"
+            VALUE "InternalName", "Mr.T BattleShip\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Mr.T BattleShip.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Mr.T BattleShip\0"
+            VALUE "ProductVersion", "2.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PLAYERNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_COMPNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PLACESHIPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_INITIALS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Mr.T BattleShip"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Mr.T BattleShip"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the game\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_ASKT            "Ask Mr. T for a suggestion\nAsk T"
+    ID_FILE_NEWGAME         "Starts a new game\nNew Game"
+    ID_HIGHSCORES           "View High Scores"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\BattleWack.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

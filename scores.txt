@@ -1,0 +1,10 @@
+
+ JAH 100
+
+ MRT 70
+
+ TED 62
+
+ BPS 59
+
+ RDB 0
